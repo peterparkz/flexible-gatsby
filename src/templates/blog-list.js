@@ -45,7 +45,7 @@ class BlogIndex extends React.Component {
                     {node.frontmatter.date}&nbsp;&nbsp;—&nbsp;
                   </span>
                   <span className="post-words">
-                    {node.timeToRead} minute read
+                    {node.timeToRead} min de leitura
                   </span>
                 </div>
               </article>
@@ -105,7 +105,7 @@ export const pageQuery = graphql`
           }
           timeToRead
           frontmatter {
-            date(formatString: "YYYY, MMM DD")
+            date(formatString: "DD, MMM, YYYY")
             title
             img {
               childImageSharp {
